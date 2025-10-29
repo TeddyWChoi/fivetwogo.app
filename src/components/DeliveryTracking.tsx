@@ -5,6 +5,7 @@ import { Card } from './ui/card';
 import { Progress } from './ui/progress';
 import { Avatar, AvatarFallback } from './ui/avatar';
 import { Badge } from './ui/badge';
+import deliveryImage from '../assets/delivery.jpg';
 
 interface DeliveryTrackingProps {
     deliveryId: string | null;
@@ -196,7 +197,7 @@ export function DeliveryTracking({ deliveryId, onBack }: DeliveryTrackingProps) 
                         </div>
                         <p className="text-sm text-green-700 mb-4">서울역 쉼터에 전달되었습니다.</p>
                         <div className="bg-white rounded-lg overflow-hidden border-2 border-green-100">
-                            <img src="/src/assets/delivery.jpg" alt="배급 인증" className="w-full h-48 object-cover" />
+                            <img src={deliveryImage} alt="배급 인증" className="w-full h-48 object-cover" />
                             <div className="p-3">
                                 <p className="text-xs text-gray-600">확인: 서울역 쉼터 • 오후 3:15</p>
                             </div>
