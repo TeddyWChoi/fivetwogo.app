@@ -81,7 +81,7 @@ export function WelcomeScreen({ onGetStarted }: WelcomeScreenProps) {
                 <div className="md:hidden">
                     {/* Background Image */}
                     <div
-                        className="absolute h-[709px] left-1/2 top-[-214px] lg:top-0 -translate-x-1/2 w-full max-w-[433px]"
+                        className="absolute h-[709px] left-1/2 top-[-214px] lg:!top-0 -translate-x-1/2 w-full max-w-[433px]"
                         data-name="ONBOARDING PICTURE"
                     >
                         <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
