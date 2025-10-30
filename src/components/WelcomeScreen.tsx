@@ -77,56 +77,11 @@ export function WelcomeScreen({ onGetStarted }: WelcomeScreenProps) {
     return (
         <div className="relative min-h-screen w-full overflow-hidden" data-name="FiveTwoGo App">
             <div className="relative w-full max-w-[375px] min-h-screen mx-auto overflow-y-auto bg-[#202020]">
-                {/* Desktop Layout */}
-                <div className="hidden md:flex flex-col items-center min-h-screen pt-16 pb-20">
-                    {/* Background Image */}
-                    <div className="relative h-[500px] w-full max-w-[433px] mb-[-200px]" data-name="ONBOARDING PICTURE">
-                        <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-                            <img
-                                alt=""
-                                className="absolute max-w-none object-50%-50% object-cover size-full"
-                                src={imgOnboardingPicture1}
-                            />
-                            <div className="absolute bg-gradient-to-b from-[54.443%] from-[rgba(0,0,0,0)] inset-0 to-[#202020]" />
-                        </div>
-                    </div>
-
-                    {/* Logo */}
-                    <div className="relative z-10 mb-4">
-                        <img src={logoImage} alt="FiveTwoGo Logo" className="w-[60px] h-[60px] rounded-[8px]" />
-                    </div>
-
-                    {/* FiveTwoGo Text */}
-                    <p className="capitalize font-['Poppins:Black',_sans-serif] leading-[0.835] not-italic text-[#e73a40] text-[56.12px] text-center text-nowrap whitespace-pre z-10 mb-[-20px]">
-                        FiveTwoGo
-                    </p>
-
-                    {/* Content */}
-                    <div className="content-stretch flex flex-col gap-[22px] items-center w-full px-4 z-10">
-                        <div className="font-['Poppins:Bold',_sans-serif] leading-[normal] not-italic relative shrink-0 text-[#fcfcfc] text-[22px] text-center tracking-[-0.0902px] w-full max-w-[332px]">
-                            <p className="mb-0">Track your donation</p>
-                            <p>in real time</p>
-                        </div>
-                        <CallToActionButton onClick={onGetStarted} />
-                        <p className="font-['Poppins:Medium',_sans-serif] h-[20px] leading-[normal] not-italic relative shrink-0 text-[#fcfcfc] text-[0px] text-[13px] text-center tracking-[-0.0533px] w-full">
-                            Already a member?
-                            <span className="font-['Poppins:Bold',_sans-serif]"> </span>
-                            <span className="font-['Poppins:Bold',_sans-serif] text-[#e73a40]">Sign in</span>
-                        </p>
-                    </div>
-
-                    {/* Home Indicator */}
-                    <div
-                        className="absolute bg-[#fcfcfc] bottom-4 h-[3px] left-1/2 -translate-x-1/2 rounded-[100px] w-[134px]"
-                        data-name="Home Indicator"
-                    />
-                </div>
-
                 {/* Mobile Layout */}
                 <div className="md:hidden">
                     {/* Background Image */}
                     <div
-                        className="absolute h-[709px] left-1/2 top-[-214px] -translate-x-1/2 w-full max-w-[433px]"
+                        className="absolute h-[709px] left-1/2 top-[-214px] lg:top-0 -translate-x-1/2 w-full max-w-[433px]"
                         data-name="ONBOARDING PICTURE"
                     >
                         <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
