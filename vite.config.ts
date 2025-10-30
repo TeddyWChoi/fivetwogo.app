@@ -4,6 +4,9 @@
   import path from 'path';
 
   export default defineConfig({
+    // Important for GitHub Pages project sites served under /<user>/<repo>/
+    // Adjust if using a custom domain.
+    base: '/fivetwogo.app/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -66,7 +69,7 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'build-gh',
     },
     server: {
       port: 3000,
