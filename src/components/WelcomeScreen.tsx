@@ -87,7 +87,7 @@ export function WelcomeScreen({ onGetStarted }: WelcomeScreenProps) {
                         <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
                             <img
                                 alt=""
-                                className="absolute max-w-none object-50%-50% object-cover size-full"
+                                className="absolute max-w-none object-cover lg:object-top object-center size-full"
                                 src={imgOnboardingPicture1}
                             />
                             <div className="absolute bg-gradient-to-b from-[54.443%] from-[rgba(0,0,0,0)] inset-0 to-[#202020]" />
